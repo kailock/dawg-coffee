@@ -1,1 +1,164 @@
-/* Your stylesheet goes here */
+/* Kaitlin Lockhart
+   Stylesheet for index.html and order.html for the Dawg Coffee website  */
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
+
+nav a, a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #FF704D;
+}
+
+a svg {
+    fill: currentColor;
+}
+
+body {
+    background-color: #E9EAEE;
+    font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+dd {
+    padding-left: 1em;
+    font-style: italic;
+}
+
+footer {
+    background-color: #afb3c2;
+    border-top: 3px;
+    border-top-color: #D87E28;
+    clear: both;
+    font-size: 12px;
+    padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+    color: #BC6026;
+}
+
+#header {
+    padding-top: 3em;
+}
+
+#header p, #headline svg {
+    visibility: hidden;
+}
+
+#headline p {
+    font-style: italic;
+}
+
+#information, #story {
+    background-color: #dbdce3;
+}
+
+
+li  {
+    display: inline;
+    font-variant: small-caps;
+    padding: 0.5em;
+}
+
+#map{
+    border-radius: 5px;
+}
+
+#story img{
+    float: right;
+    height: 300px;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+nav {
+    background-color: #181C22;
+    display: block;
+    font-size: 16px;
+    padding-left: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+svg {
+    height: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    #credits {
+        text-align: right;
+    }
+
+    #header {
+        background-image: url("../img/background-sm.jpg");
+        color: white;
+        min-height: 550px;
+        text-align: right;
+    }
+
+    #header p {
+        visibility: visible;
+    }
+
+    #headline p {
+        font-size: 1.25em;
+        text-align: center;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    h2 {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    li {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #story img {
+        height: 400px;
+    }
+
+    nav {
+        background-color: rgba(24, 28, 34, 0.8);
+    }
+
+    #headline svg {
+        visibility: visible;
+        height: 1.5em;
+        padding-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #header {
+        background-image: url("../img/background-md.jpg");
+    }
+
+    #header h1 {
+        font-size: 4em; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #header {
+        background-image: url("../img/background-lg.jpg");
+    }
+}
